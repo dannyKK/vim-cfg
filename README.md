@@ -1,4 +1,4 @@
 vim-cfg
 =======
-
-My vim config
+Subset of vimrc taken from:
+www.derekwyatt.org/
