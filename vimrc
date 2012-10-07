@@ -1,10 +1,9 @@
 filetype off 
-call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-
+call pathogen#infect('~/.vim/bundle')
+syntax on
 filetype on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 colorscheme xoria256
 set tabstop=2
@@ -25,12 +24,12 @@ set lazyredraw
 set showcmd
 set stl=%f\ %m\ %r%{fugitive#statusline()}\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B]
 set showmode
-syntax on
 set mousehide
 set guicursor=n-v-c:block-Cursor-blinkon0,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor,r-cr:hor20-Cursor,sm:block-Cursor-blinkon0
 set guioptions=acg
 set debug=msg
-set history=100
+set history=1000
+set undolevels=1000
 set foldopen=block,insert,jump,mark,percent,quickfix,search,tag,undo
 set scrolloff=8
 set showfulltag
@@ -42,6 +41,16 @@ set incsearch
 set clipboard+=unnamed
 set autoread
 set grepprg=grep\ -nH\ $*
+
+"No backup and swp file
+set nobackup
+set noswapfile
+
+"Personal remaps
+nnoremap ; :
+nnoremap j gj
+nnoremap k gk
+
 "set relativenumber
 let mapleader = ","
 nmap <silent> ,p :set invpaste<CR>:set paste?<CR>
@@ -103,13 +112,3 @@ nmap <silent> ,sv :so $MYVIMRC<CR>
 nmap <silent> <C-o> 10zl
 nmap <silent> <C-i> 10zh
 nmap ,x :w<cr>:!chmod 755 %<cr>:e<cr>
-
-
-" Toggle the NERD Tree on an off with F7
-nmap <F7> :NERDTreeToggle<CR>
-
-" Close the NERD Tree with Shift-F7
-nmap <S-F7> :NERDTreeClose<CR>
-
-" Show the bookmarks table on startup
-let NERDTreeShowBookmarks=1
