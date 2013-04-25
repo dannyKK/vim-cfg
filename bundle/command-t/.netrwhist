@@ -1,3 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/dejan/turn.js'
+let g:netrw_dirhist_2='/var/www/clients/client1/web1/web/default/css'
+let g:netrw_dirhist_3='/var/www/clients/client1/web1/web/default/.git'
+let g:netrw_dirhist_4='/var/www/clients/client1/web1/web/lufthansa'
+let g:netrw_dirhist_5='/var/www/clients/client1/web1/web/lufthansa/.git'
+let g:netrw_dirhist_6='/var/www/clients/client1/web1/web/fans2page/app/application/views/front'
+let g:netrw_dirhist_7='/var/www/clients/client1/web1/web/fans2page/app/application/views/templates'
+let g:netrw_dirhist_8='/var/www/clients/client1/web1/web/fans2page/app/application/views/front'
+let g:netrw_dirhist_9='/var/www/clients/client1/web1/web/fans2page/app/application/views/admin'
