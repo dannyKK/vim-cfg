@@ -53,10 +53,10 @@ nnoremap k gk
 
 "set relativenumber
 let mapleader = ","
-nmap <silent> ,p :set invpaste<CR>:set paste?<CR>
-nmap <silent> ,cd :lcd %:h<CR>
-nmap <silent> ,md :!mkdir -p %:p:h<CR>
-nmap <silent> ,n :nohls<CR>
+nnoremap <silent> ,p :set invpaste<CR>:set paste?<CR>
+nnoremap <silent> ,cd :lcd %:h<CR>
+nnoremap <silent> ,md :!mkdir -p %:p:h<CR>
+nnoremap <silent> ,n :nohls<CR>
 cnoremap <C-A>      <Home>
 cnoremap <C-B>      <Left>
 cnoremap <C-E>      <End>
@@ -68,47 +68,38 @@ cnoremap <ESC><C-B> <S-Left>
 cnoremap <ESC>f     <S-Right>
 cnoremap <ESC><C-F> <S-Right>
 cnoremap <ESC><C-H> <C-W>
-noremap <silent> <C-F9>  :vertical resize -10<CR>
-noremap <silent> <C-F10> :resize +10<CR>
-noremap <silent> <C-F11> :resize -10<CR>
-noremap <silent> <C-F12> :vertical resize +10<CR>
-nmap <silent> <C-o> 10zl
-nmap <silent> <C-i> 10zh
+nnoremap <silent> <C-o> 10zl
+nnoremap <silent> <C-i> 10zh
 set synmaxcol=2048
 
 " Maps to make handling windows a bit easier
-noremap <silent> ,h :wincmd h<CR>
-noremap <silent> ,j :wincmd j<CR>
-noremap <silent> ,k :wincmd k<CR>
-noremap <silent> ,l :wincmd l<CR>
-noremap <silent> ,sb :wincmd p<CR>
-noremap <silent> <C-F9>  :vertical resize -10<CR>
-noremap <silent> <C-F10> :resize +10<CR>
-noremap <silent> <C-F11> :resize -10<CR>
-noremap <silent> <C-F12> :vertical resize +10<CR>
-noremap <silent> ,s8 :vertical resize 83<CR>
-noremap <silent> ,cj :wincmd j<CR>:close<CR>
-noremap <silent> ,ck :wincmd k<CR>:close<CR>
-noremap <silent> ,ch :wincmd h<CR>:close<CR>
-noremap <silent> ,cl :wincmd l<CR>:close<CR>
-noremap <silent> ,cc :close<CR>
-noremap <silent> ,cw :cclose<CR>
-noremap <silent> ,ml <C-W>L
-noremap <silent> ,mk <C-W>K
-noremap <silent> ,mh <C-W>H
-noremap <silent> ,mj <C-W>J
-noremap <silent> <C-7> <C-W>>
-noremap <silent> <C-8> <C-W>+
-noremap <silent> <C-9> <C-W>+
-noremap <silent> <C-0> <C-W>>
+nnoremap <silent> ,h :wincmd h<CR>
+nnoremap <silent> ,j :wincmd j<CR>
+nnoremap <silent> ,k :wincmd k<CR>
+nnoremap <silent> ,l :wincmd l<CR>
+nnoremap <silent> ,sb :wincmd p<CR>
+nnoremap <silent> <C-F9>  :vertical resize -10<CR>
+nnoremap <silent> <C-F10> :resize +10<CR>
+nnoremap <silent> <C-F11> :resize -10<CR>
+nnoremap <silent> <C-F12> :vertical resize +10<CR>
+nnoremap <silent> ,s8 :vertical resize 83<CR>
+nnoremap <silent> ,cj :wincmd j<CR>:close<CR>
+nnoremap <silent> ,ck :wincmd k<CR>:close<CR>
+nnoremap <silent> ,ch :wincmd h<CR>:close<CR>
+nnoremap <silent> ,cl :wincmd l<CR>:close<CR>
+nnoremap <silent> ,cc :close<CR>
+nnoremap <silent> ,cw :cclose<CR>
+nnoremap <silent> ,ml <C-W>L
+nnoremap <silent> ,mk <C-W>K
+nnoremap <silent> ,mh <C-W>H
+nnoremap <silent> ,mj <C-W>J
+nnoremap <silent> <C-7> <C-W>>
+nnoremap <silent> <C-8> <C-W>+
+nnoremap <silent> <C-9> <C-W>+
+nnoremap <silent> <C-0> <C-W>>
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 " Edit the vimrc file
-nmap <silent> ,ev :e $MYVIMRC<CR>
-nmap <silent> ,sv :so $MYVIMRC<CR>
-
-" Make horizontal scrolling easier
-nmap <silent> <C-o> 10zl
-nmap <silent> <C-i> 10zh
-nmap ,x :w<cr>:!chmod 755 %<cr>:e<cr>
+nnoremap <silent> ,ev :e $MYVIMRC<CR>
+nnoremap <silent> ,sv :so $MYVIMRC<CR>
