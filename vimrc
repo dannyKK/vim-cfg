@@ -50,6 +50,8 @@ set noswapfile
 nnoremap ; :
 nnoremap j gj
 nnoremap k gk
+"close buffer in split, keep split open
+nnoremap <silent> ,c :bp\|bd #<CR>
 
 "set relativenumber
 let mapleader = ","
