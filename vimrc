@@ -5,6 +5,9 @@ syntax on
 filetype on
 filetype plugin indent on
 
+"tmux fix
+set t_ut=
+
 colorscheme xoria256
 set tabstop=4
 set wildmenu
